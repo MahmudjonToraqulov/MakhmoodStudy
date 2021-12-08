@@ -1,0 +1,360 @@
+/*----------------------------------- 
+
+*************** Table of contents **************
+1) Google fonts
+2) Variables
+3) Overrides variables for - theme dark
+4) Base
+5) Box 
+6) Customized bootstrap classes
+7) Animation keyframes
+8) Section - padding,title
+9) Buttons
+10) Page loader
+11) Circular img
+12) Forms
+13) Video modal
+14) Pagination
+15) Breadcrump
+16) Tabs
+17) Bubl animation
+18) Style switcher
+19) Header
+20) Footer
+21) Banner section
+22) Fan facts
+23) Courses section
+24) Testimonials 
+25) Bai section
+26) Course details section
+27) Contact section
+
+----------------------------------- */
+
+/*----------------------------------
+1) Google fonts
+----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,900&family=Roboto:wght@100;300;400;500;700&family=Zen+Antique&family=Zen+Kurenaido&display=swap');
+
+/*----------------------------------
+2) Variables
+
+----------------------------------*/
+:root{
+    --orange: hsl(36,80%,50%); 
+    --white: hsl(0,0%,100%);
+    --WHITE: hsl(0,0%,100%);
+    --BLACK: hsl(0,0%,0%);
+    --black-90: hsl(0,0%,10%);
+    --black-70: hsl(0,0%,30%);
+    --black-alpha-40: hsl(0,0%,0%,0.4);
+    --yellow-light: hsl(44,95%,83%);
+    --green-light: hsl(158,68%,75%);
+    --red-light: hsl(0,84%,80%);
+    --orange-light: hsl(22,85%,80%);
+    --select-box-bg-color: hsl(0,0%,100%);
+    --border-color-1: hsl(0,0%,90%);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+3) Overrides variables for - theme dark
+----------------------------------*/
+
+
+/*----------------------------------
+4) Base
+
+----------------------------------*/
+body{
+    background-color: var(body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-70);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--main-color);
+}
+img{
+    min-width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+::selection{
+    color: var(--WHITE);
+    background-color: var(--main-color);
+}
+
+
+
+
+
+
+/*----------------------------------
+5) Box 
+
+----------------------------------*/
+
+
+/*----------------------------------
+6) Customized bootstrap classes
+
+----------------------------------*/
+.container{
+    --bs-gutter-x: 15px;
+    max-width: 1140px;
+}
+.row{
+    --bs-gutter-x: 30px;
+}
+
+
+
+
+
+
+/*----------------------------------
+7) Animation keyframes
+
+----------------------------------*/
+
+
+/*----------------------------------
+8) Section - padding,title
+
+----------------------------------*/
+
+
+/*----------------------------------
+9) Buttons
+
+----------------------------------*/
+
+
+/*----------------------------------
+10) Page loader
+
+----------------------------------*/
+
+
+/*----------------------------------
+11) Circular img
+
+----------------------------------*/
+
+
+/*----------------------------------
+12) Forms
+
+----------------------------------*/
+
+
+/*----------------------------------
+13) Video modal
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+14) Pagination
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+15) Breadcrump
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+16) Tabs
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+17) Bubl animation
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+18) Style switcher
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+19) Header
+
+
+----------------------------------*/
+.header{
+    border-bottom: 1px solid var(--border-color-2);
+}
+
+.header-logo a{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--black-70);
+}
+.header-logo span{
+    color: var(--main-color);
+}
+.header .menu-item{
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+}
+.header .menu-item > a{
+    display: block;
+    padding: 24px 0;
+    font-weight: 400;
+    color: var(--black-90);
+    text-transform: capitalize;
+    transition: color .3s ease;
+}
+.header .sub-menu .sub-menu-item > a:hover,
+.header .menu-item:hover > a{
+    color: var(--main-color);
+}
+.header .menu-item > a i{
+    font-size: 13px;
+    margin-left: 3px;
+    pointer-events: none;
+}
+.header .sub-menu {
+    position: absolute;
+    top: 100%;
+    background-color: var(--white);
+    left: 0; 
+    width: 210px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    transition: all .3s ease;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+}
+@media (min-width: 992px){
+    .header .menu-item:hover > .sub-menu{
+        transform: translateY(0px);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.header .sub-menu-item a{
+    display: block; 
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: color .3s ease;
+    color: var(--black-90);
+}
+
+.header-backdrop,
+.header-close-btn,
+.header-hamburger-btn{
+    display: none;
+}
+
+
+
+
+/*----------------------------------
+20) Footer
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+21) Banner section
+----------------------------------*/
+.banner-section{
+    background-color: violet;
+    padding: 80px 0;
+    min-height: 680px;
+}
+
+
+
+
+/*----------------------------------
+22) Fan facts
+
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+23) Courses section
+
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+24) Testimonials 
+
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+25) Bai section
+
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+26) Course details section
+
+
+
+
+----------------------------------*/
+
+
+/*----------------------------------
+27) Contact section
+
+
+----------------------------------*/
